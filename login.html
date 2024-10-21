@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css ">
 </head>
+
 <body>
-    <div class="form">
-        <form  >
-            <input type="text" name="correo" id="correo" placeholder="Ingrese el correo del usuario"> <br>
-            <input type="password" name="pass" id="pass" placeholder="Ingrese su contraseña"> <br><br>
-            <input type="submit" value="Enviar" id="enviar">
-        </form>
+    <div class="container">
+        <div class="left-side">
+            <nav>
+                <a href="#">LOG IN</a>
+                <a href="#">CREATE ACCOUNT</a>
+            </nav>
+            <form class="login-form">
+                <h2>Inicio de sesión</h2>
+                <div class="input-container">
+                    <input type="email" name="correo" id="correo" placeholder="Correo electronico"> 
+                </div>
+                <div class="input-container">
+                    <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                    <span class="show-password">👁️</span>
+                </div> 
+                <input class="btn" type="submit" value="Enviar" id="enviar">
+            </form>
+        </div>
+        <div class="right-side">
+            <img src="img/camion.jpg" alt="Imagen de un camion">
+        </div>
     </div>
 </body>
+
     <script src="lib/jquery-3.3.1.min.js"></script>
     <script type="module" src="/Funciones/firebaseConect.js"></script>
     <script type="module">
